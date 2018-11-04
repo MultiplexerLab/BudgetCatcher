@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f8fbfd"
+    tools:context="com.example.dell.designapp.multiplexer.example.dell.designapp.fragment.HomeFragment"
+    android:id="@+id/relativelayout"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/remaining"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:layout_marginTop="20dp"
+                android:text="OPEN"
+                android:layout_marginLeft="20dp"
+                android:textColor="#d5d5d5"
+                />
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tableone"
+                android:layout_below="@id/remaining"
+                android:layout_marginTop="9dp"
+                android:background="#ffffff"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TableRow
+                    android:id="@+id/firstrow"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp">
+
+                    <ImageView
+                        android:id="@+id/groceriesimg"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_below="@+id/remaining"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="17dp"
+                        android:src="@drawable/groceries" />
+
+                    <TextView
+                        android:id="@+id/groceries"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Social Security Tax"
+                        android:textColor="#000000"
+                        android:layout_marginLeft="15dp"
+                        android:layout_below="@id/remaining"
+                        android:layout_marginTop="17dp"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/ninetypercentused"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Due in 1 day"
+                        android:padding="7dp"
+                        android:layout_marginTop="35.5dp"
+                        android:textColor="#a5a5a5"
+                        android:textSize="10dp" />
+
+                </TableRow>
+            </TableLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:id="@+id/listone"
+                android:layout_height="1.5dp"
+                android:padding="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="50dp"
+                android:layout_below="@id/tableone"
+                android:background="#ff5201" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tabletwo"
+                android:layout_below="@id/tableone"
+                android:layout_marginTop="15dp"
+                android:background="#ffffff"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TableRow
+                    android:id="@+id/secondrow"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp">
+
+                    <ImageView
+                        android:id="@+id/gasimg"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_below="@+id/tableone"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="17dp"
+                        android:src="@drawable/gas" />
+
+                    <TextView
+                        android:id="@+id/gas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Accountant"
+                        android:textColor="#000000"
+                        android:layout_marginLeft="15dp"
+                        android:layout_below="@id/tableone"
+                        android:layout_marginTop="17dp"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/seventyfivepercentused"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Due in Jan 15"
+                        android:padding="7dp"
+                        android:layout_marginTop="35.5dp"
+                        android:textColor="#a5a5a5"
+                        android:textSize="10dp" />
+
+                </TableRow>
+            </TableLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:id="@+id/listtwo"
+                android:layout_height="1.5dp"
+                android:padding="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="100dp"
+                android:layout_below="@id/tabletwo"
+                android:background="#ffad01" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tablethree"
+                android:layout_below="@id/tabletwo"
+                android:layout_marginTop="15dp"
+                android:background="#ffffff"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TableRow
+                    android:id="@+id/thirdrow"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp">
+
+                    <ImageView
+                        android:id="@+id/entertainmentimg"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_below="@+id/tabletwo"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="17dp"
+                        android:src="@drawable/entertainment" />
+
+                    <TextView
+                        android:id="@+id/entertainment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gym"
+                        android:textColor="#000000"
+                        android:layout_marginLeft="15dp"
+                        android:layout_below="@id/tabletwo"
+                        android:layout_marginTop="17dp"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/fifteenpercentused"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Due in Jan 20"
+                        android:padding="7dp"
+                        android:layout_marginTop="35.5dp"
+                        android:textColor="#a5a5a5"
+                        android:textSize="10dp" />
+
+                </TableRow>
+            </TableLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:id="@+id/listthree"
+                android:layout_height="1.5dp"
+                android:padding="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="300dp"
+                android:layout_below="@id/tablethree"
+                android:background="#01f8ff" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tablee"
+                android:layout_below="@id/tablethree"
+                android:layout_marginTop="15dp"
+                android:background="#ffffff"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TableRow
+                    android:id="@+id/roww"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp">
+
+                    <ImageView
+                        android:id="@+id/vodaphoneimg"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_below="@+id/tabletwo"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="17dp"
+                        android:src="@drawable/vodaphone" />
+
+                    <TextView
+                        android:id="@+id/vodaphone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Vodafone"
+                        android:textColor="#000000"
+                        android:layout_marginLeft="15dp"
+                        android:layout_below="@id/tabletwo"
+                        android:layout_marginTop="17dp"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/percent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Due in Jan 24"
+                        android:padding="7dp"
+                        android:layout_marginTop="35.5dp"
+                        android:textColor="#a5a5a5"
+                        android:textSize="10dp" />
+
+                </TableRow>
+            </TableLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:id="@+id/listt"
+                android:layout_height="1.5dp"
+                android:padding="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="320dp"
+                android:layout_below="@id/tablee"
+                android:background="#79fede" />
+
+            <TextView
+                android:id="@+id/full"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/tablee"
+                android:text="CLOSED"
+                android:layout_marginLeft="20dp"
+                android:textColor="#d5d5d5"
+                />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tablefour"
+                android:layout_below="@id/full"
+                android:layout_marginTop="15dp"
+                android:background="#ffffff"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TableRow
+                    android:id="@+id/fourthrow"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp">
+
+                    <ImageView
+                        android:id="@+id/shoppingimg"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_below="@+id/tablethree"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="17dp"
+                        android:src="@drawable/shopping" />
+
+                    <TextView
+                        android:id="@+id/shopping"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="House Rent"
+                        android:textColor="#000000"
+                        android:layout_marginLeft="15dp"
+                        android:layout_below="@id/full"
+                        android:layout_marginTop="17dp"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/hundreddollarused"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Manual, on Jan 5"
+                        android:padding="7dp"
+                        android:layout_marginTop="35.5dp"
+                        android:textColor="#a5a5a5"
+                        android:textSize="10dp" />
+
+                    <TextView
+                        android:id="@+id/dollareighthundred"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Paid"
+                        android:layout_marginLeft="90dp"
+                        android:layout_marginTop="16dp"
+                        android:textColor="#21cb7b"
+                        android:textSize="17dp" />
+
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tablesix"
+                android:layout_below="@id/tablefour"
+                android:layout_marginTop="15dp"
+                android:background="#ffffff">
+
+                <TableRow
+                    android:id="@+id/sixthrow"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp">
+
+                    <TextView
+                        android:id="@+id/lastline"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:text="You have 6 bills to pay this week, a total of $846.78"
+                        android:textColor="#3c3c3c"
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_below="@id/tablefour"
+                        android:layout_marginTop="17dp"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/lastnumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Paid"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="16dp"
+                        android:textColor="#21cb7b"
+                        android:textSize="17dp" />
+
+                </TableRow>
+            </TableLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

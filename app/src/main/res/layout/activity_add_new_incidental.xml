@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f9fc"
+    android:orientation="vertical"
+    tools:context="com.example.dell.designapp.multiplexer.example.dell.designapp.NewBillFinish">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="40dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/textvieww"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:gravity="left"
+                android:text="Cancel"
+                android:textColor="#ffffff"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/textviww"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="New Incidental"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textviw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textviww"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:gravity="left"
+                android:text="Name"
+                android:textColor="#9fa7b3"
+                android:textSize="16dp" />
+
+            <View
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/textviw"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="45dp"
+                android:background="#dce6f0"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/textvi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/list"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:gravity="left"
+                android:text="Description"
+                android:textColor="#9fa7b3"
+                android:textSize="16dp" />
+
+            <View
+                android:id="@+id/lis"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/textvi"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="45dp"
+                android:background="#dce6f0"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lis"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:gravity="left"
+                android:text="Amount"
+                android:textColor="#9fa7b3"
+                android:textSize="16dp" />
+
+            <SeekBar
+                android:id="@+id/simpleSeekBar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/amount"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="#3acfd5" />
+
+            <TextView
+                android:id="@+id/goal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/simpleSeekBar"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="45dp"
+                android:gravity="left"
+                android:text="Date and Time"
+                android:textColor="#9fa7b3"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/selectdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/goal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:gravity="left"
+                android:text="Select Date"
+                android:textColor="#9fa7b3"
+                android:textSize="17dp" />
+
+            <Button
+                android:id="@+id/btn_date"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_below="@id/goal"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="22dp"
+                android:background="#f6f9fc"
+                android:text=">"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/selecttime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/selectdate"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:gravity="left"
+                android:text="Select Time"
+                android:textColor="#9fa7b3"
+                android:textSize="17dp" />
+
+            <Button
+                android:id="@+id/btn_time"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_below="@id/btn_date"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="14dp"
+                android:background="#f6f9fc"
+                android:text=">"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/buttooo"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/btn_time"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="45dp"
+                android:background="@drawable/blue_button"
+                android:onClick="createtwoo"
+                android:text="Create"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="19sp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

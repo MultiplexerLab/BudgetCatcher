@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f9fc"
+    android:orientation="vertical"
+    tools:context="com.example.dell.designapp.multiplexer.example.dell.designapp.AutoSave">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="40dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/textvieww"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:gravity="left"
+                android:text="Cancel"
+                android:textColor="#ffffff"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/textviww"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="AutoSave"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textviw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textvieww"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="35dp"
+                android:gravity="left"
+                android:text="Name"
+                android:textColor="#9fa7b3"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/rainyday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textviw"
+                android:layout_marginBottom="17dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:gravity="left"
+                android:text="Rainy Day Fund"
+                android:textColor="#000000"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/rainyday"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#dce6f0"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/textvi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/list"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:gravity="left"
+                android:text="SAVE"
+                android:textColor="#9fa7b3"
+                android:textSize="17dp" />
+
+            <Button
+                android:id="@+id/buttoo"
+                android:layout_width="125dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/textvi"
+                android:layout_marginBottom="17dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="Once a week"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="16.5sp" />
+
+            <View
+                android:id="@+id/lis"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/buttoo"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#dce6f0"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lis"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:gravity="left"
+                android:text="AMOUNT"
+                android:textColor="#9fa7b3"
+                android:textSize="17dp" />
+
+            <SeekBar
+                android:id="@+id/simpleSeekBar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/amount"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#3acfd5" />
+
+            <TextView
+                android:id="@+id/goal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/simpleSeekBar"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:gravity="left"
+                android:text="GOAL"
+                android:textColor="#9fa7b3"
+                android:textSize="17dp" />
+
+            <SeekBar
+                android:id="@+id/simpleSeek"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/goal"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#3acfd5" />
+
+            <Button
+                android:id="@+id/from"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_below="@id/simpleSeek"
+                android:layout_marginTop="35dp"
+                android:background="#ffffff"
+                android:paddingRight="290dp"
+                android:text="FROM"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="19sp" />
+
+            <View
+                android:id="@+id/listt"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/from"
+                android:background="#dce6f0"
+                android:padding="5dp" />
+
+            <Button
+                android:id="@+id/to"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_below="@id/listt"
+                android:background="#ffffff"
+                android:paddingRight="290dp"
+                android:text="TO"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/buttooo"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/to"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/blue_button"
+                android:onClick="onceaweek"
+                android:text="Start Saving"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="19sp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

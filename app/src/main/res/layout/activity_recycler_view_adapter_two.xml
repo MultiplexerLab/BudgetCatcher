@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?><android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardview1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardBackgroundColor="#f5f7fa"
+    card_view:contentPaddingTop="10dp"
+    card_view:cardMaxElevation="0dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        >
+        <Button
+            android:id="@+id/buttoi"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/my_button_bg"
+            android:text="Scan Card"
+            android:onClick="scancard"
+            android:textColor="#557be2"
+            android:textAllCaps="false"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/textvieww"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#191b1d"
+            android:layout_below="@id/buttoi"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+
+        <EditText
+            android:id="@+id/firstNam"
+            android:layout_width="300dp"
+            android:padding="10dp"
+            android:layout_below="@id/textvieww"
+            android:background="@drawable/rectangle_edittext"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="CARD NUMBER"
+            android:textColorHint="#c3cfe2"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            android:textCursorDrawable="@drawable/cursor_grey"
+            android:layout_centerHorizontal="true"
+            android:maxLength="30"
+            android:inputType="phone"/>
+
+        <EditText
+            android:id="@+id/F"
+            android:layout_width="300dp"
+            android:padding="10dp"
+            android:layout_below="@id/firstNam"
+            android:textCursorDrawable="@drawable/cursor_grey"
+            android:background="@drawable/rectangle_edittext"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="CARD HOLDER'S NAME"
+            android:textColorHint="#c3cfe2"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            android:layout_centerHorizontal="true"
+            android:maxLength="30"
+            android:inputType="phone"/>
+
+        <EditText
+            android:id="@+id/mm"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:layout_below="@id/F"
+            android:textCursorDrawable="@drawable/cursor_grey"
+            android:background="@drawable/rectangle_edittext"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp"
+            android:hint="MM"
+            android:textColorHint="#c3cfe2"
+            android:layout_marginLeft="90dp"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            android:maxLength="30"
+            android:layout_alignLeft="@id/textvieww"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/yy"
+            android:layout_width="100dp"
+            android:padding="10dp"
+            android:layout_below="@id/F"
+            android:textCursorDrawable="@drawable/cursor_grey"
+            android:background="@drawable/rectangle_edittext"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp"
+            android:hint="YY"
+            android:layout_centerHorizontal="true"
+            android:textColorHint="#c3cfe2"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            android:maxLength="30"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/cvv"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:layout_marginLeft="60dp"
+            android:layout_below="@id/F"
+            android:textCursorDrawable="@drawable/cursor_grey"
+            android:background="@drawable/rectangle_edittext"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="CVV"
+            android:layout_alignRight="@id/yy"
+            android:textColorHint="#c3cfe2"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            android:maxLength="30"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/butto"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/cvv"
+            android:background="@drawable/blue_button"
+            android:text="Add Card"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="19sp" />
+
+        <Button
+            android:id="@+id/buttooi"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/butto"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/my_button_bg"
+            android:text="Cancel"
+            android:textColor="#557be2"
+            android:textAllCaps="false"
+            android:textSize="19sp" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

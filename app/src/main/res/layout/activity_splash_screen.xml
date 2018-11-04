@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#20b2aa"
+    tools:context="com.example.dell.designapp.multiplexer.example.dell.designapp.SplashScreen">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="320dp"
+            android:background="#deb887"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/splashscreenimg" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text"
+            android:text="BUDGET CATCHER"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:textSize="55dp"
+            android:gravity="center"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/subtext"
+            android:text="BUDGET FOR YOUR DREAMS"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/text"
+            android:textSize="25.5dp"
+            android:gravity="center"
+            android:textColor="#3acfd5"/>
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_below="@+id/subtext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/splashscreenlogo" />
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

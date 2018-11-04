@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="multiplexer.lab.budget.catcher.AccountCreated">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/doctorImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="200dp"
+                android:src="@drawable/tick" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/doctorImage"
+                android:layout_marginTop="10dp"
+                android:text="Account created successfully!"
+                android:textAlignment="center"
+                android:textColor="#888888"
+                android:textSize="23dp"
+                android:textStyle="bold"
+                tools:textColor="#888888" />
+
+            <TextView
+                android:id="@+id/subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Thank You..."
+                android:textAlignment="center"
+                android:textColor="#888888"
+                android:textSize="15dp"
+                tools:textColor="#8888888" />
+
+            <at.markushi.ui.CircleButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_below="@id/subtitle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="25dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="50dp"
+                android:onClick="close"
+                android:src="@drawable/ic_close_black_24dp"
+                app:cb_color="#ffffff" />
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

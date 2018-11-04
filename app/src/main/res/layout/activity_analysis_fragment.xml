@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="com.example.dell.designapp.multiplexer.example.dell.designapp.fragment.AnalysisFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="42dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <at.markushi.ui.CircleButton
+                android:id="@+id/menu"
+                android:layout_width="23dp"
+                android:layout_height="21dp"
+                android:layout_below="@id/subtitle"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_menu_black_24dp"
+                app:cb_color="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/textviww"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="Analysis"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/cashflow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textviww"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="35dp"
+                android:text="Cash Flow"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <com.github.mikephil.charting.charts.HorizontalBarChart
+                android:id="@+id/barchart"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/cashflow"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="20dp" />
+
+            <View
+                android:id="@+id/lis"
+                android:layout_width="match_parent"
+                android:layout_height="5.5dp"
+                android:layout_below="@id/barchart"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#dce6f0"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/advice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lis"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Advice"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/you"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/advice"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="You're a light driver"
+                android:textColor="#80808080"
+                android:textSize="16dp" />
+
+            <View
+                android:id="@+id/li"
+                android:layout_width="match_parent"
+                android:layout_height="5.5dp"
+                android:layout_below="@id/you"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#dce6f0"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/expenses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/you"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Expenses"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/july"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/you"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="25dp"
+                android:text="July"
+                android:textColor="#80808080"
+                android:textSize="16dp" />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/chart1"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_below="@+id/expenses"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp" />
+
+            <View
+                android:id="@+id/m"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/chart1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#dddddd"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/trends"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/m"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="All Trends"
+                android:textColor="#45cae6"
+                android:textSize="20dp" />
+
+            <View
+                android:id="@+id/mo"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_below="@id/trends"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#dce6f0"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/graph"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mo"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Graph"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/budget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/graph"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="14dp"
+                android:text="View Budget vs. Actual Spendings"
+                android:textColor="#80808080"
+                android:textSize="16dp" />
+
+            <View
+                android:id="@+id/mon"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_below="@id/budget"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#dce6f0"
+                android:padding="5dp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

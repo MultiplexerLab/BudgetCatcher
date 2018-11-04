@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f9fc"
+    android:orientation="vertical"
+    tools:context="com.example.dell.designapp.multiplexer.example.dell.designapp.ABetterCard">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="47dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <at.markushi.ui.CircleButton
+                android:layout_width="23dp"
+                android:layout_height="21dp"
+                android:layout_below="@id/subtitle"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_chevron_left_black_24dp"
+                app:cb_color="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/textviww"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="A Better Card"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/grey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textviww"
+                android:layout_marginTop="19dp"
+                android:height="60dp"
+                android:background="#a7b5c6" />
+
+            <TextView
+                android:id="@+id/texttt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textviww"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:onClick="gettherightcreditcard"
+                android:text="Get the right credit card"
+                android:textColor="#484848"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/oneminus2x"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/grey"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="205dp"
+                android:text="1-2x"
+                android:textColor="#4f6c8d"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/pointsperdollar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/oneminus2x"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2.5dp"
+                android:text="POINTS PER DOLLAR"
+                android:textColor="#557be2"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/dollarzero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/grey"
+                android:layout_marginTop="205dp"
+                android:gravity="center"
+                android:text="$0"
+                android:textColor="#4f6c8d"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/annualfee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dollarzero"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="2.5dp"
+                android:gravity="center"
+                android:text="ANNUAL FEE"
+                android:textColor="#557be2"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/tenthousand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/grey"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="205dp"
+                android:gravity="end"
+                android:text="10,000"
+                android:textColor="#4f6c8d"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/bonuspoints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dollarzero"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="2.5dp"
+                android:gravity="end"
+                android:text="BONUS POINTS"
+                android:textColor="#557be2"
+                android:textSize="13dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

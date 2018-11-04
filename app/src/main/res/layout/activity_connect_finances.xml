@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="multiplexer.lab.budget.catcher.ConnectFinances"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#557be2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Connect Finances ?"
+                android:layout_marginTop="35dp"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="22.5dp"
+                tools:textColor="#ffffff" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/doctorImage"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_below="@+id/title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/connectfinance" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/doctorImage"
+                android:onClick="okletsdoit"
+                android:background="@drawable/white_button"
+                android:text="OK, let's do it"
+                android:textAllCaps="false"
+                android:textColor="#557be2"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/subtitle"
+                android:layout_width="match_parent"
+                android:layout_marginTop="32dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content"
+                android:text="Maybe later"
+                android:layout_below="@+id/button"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="17dp"
+                tools:textColor="#ffffff" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

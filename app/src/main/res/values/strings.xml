@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DesignApp</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_manage">Manage</string>
+    <string name="nav_accounts">Accounts</string>
+    <string name="nav_analysis">Analysis</string>
+</resources>

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f6f9fc"
+    tools:context="com.example.dell.designapp.multiplexer.example.dell.designapp.NewBillSelectRecurringTransaction"
+    android:id="@+id/relativelayout"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#ffffff"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="47dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/cancel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="17dp"
+                android:text="Cancel"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ffffff"
+                android:layout_gravity="left"
+                android:gravity="left"
+                />
+
+            <TextView
+                android:id="@+id/textviww"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="20dp"
+                android:text="Select Transaction"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="45dp"
+                android:id="@+id/grey"
+                android:layout_marginTop="19dp"
+                android:layout_below="@id/textviww"
+                android:background="#a7b5c6" />
+
+            <TextView
+                android:id="@+id/texttt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="18dp"
+                android:layout_below="@id/textviww"
+                android:text="Posted"
+                android:textStyle="bold"
+                android:layout_marginTop="27dp"
+                android:textColor="#484848"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/applestore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_marginTop="15dp"
+                android:text="Apple Store"
+                android:layout_below="@id/grey"
+                android:layout_marginLeft="10dp"
+                android:textColor="#4f6c8d"
+                />
+
+            <TextView
+                android:id="@+id/dateone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+                android:text="03/08/2016"
+                android:layout_below="@id/applestore"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="#a3adb4"
+                />
+
+            <TextView
+                android:id="@+id/billone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:layout_marginTop="16dp"
+                android:text="- 299"
+                android:layout_below="@id/grey"
+                android:gravity="end"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="#f96b6b"
+                />
+
+            <TextView
+                android:id="@+id/billonesmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:layout_marginTop="22dp"
+                android:text=".95"
+                android:layout_below="@id/grey"
+                android:gravity="end"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="#f96b6b"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:id="@+id/listone"
+                android:layout_height="1dp"
+                android:padding="5dp"
+                android:layout_below="@id/dateone"
+                android:background="#bec9d1" />
+
+            <TextView
+                android:id="@+id/ducatitrumpnewyork"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_marginTop="15dp"
+                android:text="Ducati Trump New York"
+                android:layout_below="@id/listone"
+                android:layout_marginLeft="10dp"
+                android:textColor="#4f6c8d"
+                />
+
+            <TextView
+                android:id="@+id/datetwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+                android:text="02/16/2016"
+                android:layout_below="@id/ducatitrumpnewyork"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="#a3adb4"
+                />
+
+            <TextView
+                android:id="@+id/billtwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:layout_marginTop="29dp"
+                android:text="- 1,182"
+                android:layout_below="@id/billone"
+                android:gravity="end"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="#f96b6b"
+                />
+
+            <TextView
+                android:id="@+id/billtwosmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:layout_marginTop="21dp"
+                android:text=".00"
+                android:layout_below="@id/listone"
+                android:gravity="end"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="#f96b6b"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:id="@+id/listtwo"
+                android:layout_height="1dp"
+                android:padding="5dp"
+                android:layout_below="@id/datetwo"
+                android:background="#bec9d1" />
+
+            <TextView
+                android:id="@+id/yebocreative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_marginTop="15dp"
+                android:text="Yebo Creative"
+                android:layout_below="@id/listtwo"
+                android:layout_marginLeft="10dp"
+                android:textColor="#4f6c8d"
+                />
+
+            <TextView
+                android:id="@+id/datethree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+                android:text="02/06/2016"
+                android:layout_below="@id/yebocreative"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="#a3adb4"
+                />
+
+            <TextView
+                android:id="@+id/billthree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:layout_marginTop="29dp"
+                android:text="- 99"
+                android:layout_below="@id/billtwo"
+                android:gravity="end"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="#f96b6b"
+                />
+
+            <TextView
+                android:id="@+id/billthreesmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:layout_marginTop="22dp"
+                android:text=".99"
+                android:layout_below="@id/listtwo"
+                android:gravity="end"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="#f96b6b"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:id="@+id/listthree"
+                android:layout_height="1dp"
+                android:padding="5dp"
+                android:layout_below="@id/datethree"
+                android:background="#bec9d1" />
+
+            <TextView
+                android:id="@+id/marvelprototyping"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_marginTop="15dp"
+                android:text="Marvel Prototyping"
+                android:layout_below="@id/listthree"
+                android:layout_marginLeft="10dp"
+                android:textColor="#4f6c8d"
+                />
+
+            <TextView
+                android:id="@+id/datefour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+                android:text="02/06/2016"
+                android:layout_below="@id/marvelprototyping"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="#a3adb4"
+                />
+
+            <TextView
+                android:id="@+id/billfour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:layout_marginTop="29dp"
+                android:text="- 42"
+                android:layout_below="@id/billthree"
+                android:gravity="end"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="#f96b6b"
+                />
+
+            <TextView
+                android:id="@+id/billfoursmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:layout_marginTop="22dp"
+                android:text=".00"
+                android:layout_below="@id/listthree"
+                android:gravity="end"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="#f96b6b"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:id="@+id/listfour"
+                android:layout_height="1dp"
+                android:padding="5dp"
+                android:layout_below="@id/datefour"
+                android:background="#bec9d1" />
+
+            <TextView
+                android:id="@+id/ash"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:layout_below="@id/listfour"
+                android:background="#f6f9fc" />
+
+            <Button
+                android:id="@+id/con"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="180dp"
+                android:layout_marginBottom="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/listfour"
+                android:background="@drawable/blue_button"
+                android:text="Continue"
+                android:onClick="selecttransaction"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="19sp" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?><android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardview1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    card_view:cardBackgroundColor="#f6f9fc"
+    card_view:contentPaddingTop="10dp"
+    card_view:cardMaxElevation="0dp"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="320dp"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/dollarimg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/dollar" />
+
+            <TextView
+                android:id="@+id/setweeklybudget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Set Gas Budget"
+                android:textColor="#414b6b"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="55dp"
+                android:layout_marginRight="15dp"
+                android:layout_below="@id/dollarimg"
+                android:layout_marginTop="17dp"
+                android:textSize="30dp" />
+
+
+            <TextView
+                android:id="@+id/budget"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="$1000.00"
+                android:textColor="#90a4b7"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textStyle="bold"
+                android:layout_below="@id/setweeklybudget"
+                android:layout_marginTop="17dp"
+                android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/one"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="30dp"
+                android:background="#ffffff"
+                android:text="1"
+                android:onClick="one"
+                android:layout_below="@id/budget"
+                android:textColor="#9b9b9b"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/two"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="70dp"
+                android:background="#ffffff"
+                android:text="2"
+                android:layout_centerHorizontal="true"
+                android:onClick="two"
+                android:layout_below="@id/budget"
+                android:textColor="#9b9b9b"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/three"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="90dp"
+                android:background="#ffffff"
+                android:text="3"
+                android:layout_toRightOf="@+id/two"
+                android:onClick="three"
+                android:layout_below="@id/budget"
+                android:textColor="#9b9b9b"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/four"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginLeft="30dp"
+                android:background="#ffffff"
+                android:text="4"
+                android:onClick="four"
+                android:layout_below="@id/one"
+                android:textColor="#9b9b9b"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/five"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginLeft="70dp"
+                android:background="#ffffff"
+                android:text="5"
+                android:layout_centerHorizontal="true"
+                android:onClick="five"
+                android:layout_below="@id/two"
+                android:textColor="#9b9b9b"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/six"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginLeft="90dp"
+                android:background="#ffffff"
+                android:text="6"
+                android:layout_toRightOf="@+id/five"
+                android:onClick="six"
+                android:layout_below="@id/two"
+                android:textColor="#9b9b9b"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/seven"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginLeft="30dp"
+                android:background="#ffffff"
+                android:text="7"
+                android:onClick="seven"
+                android:layout_below="@id/four"
+                android:textColor="#9b9b9b"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/eight"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginLeft="70dp"
+                android:background="#ffffff"
+                android:text="8"
+                android:layout_centerHorizontal="true"
+                android:onClick="eight"
+                android:layout_below="@id/five"
+                android:textColor="#9b9b9b"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/nine"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginLeft="90dp"
+                android:background="#ffffff"
+                android:text="9"
+                android:layout_toRightOf="@+id/five"
+                android:onClick="nine"
+                android:layout_below="@id/six"
+                android:textColor="#9b9b9b"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/zero"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginLeft="70dp"
+                android:background="#ffffff"
+                android:text="0"
+                android:layout_centerHorizontal="true"
+                android:onClick="zero"
+                android:layout_below="@id/eight"
+                android:textColor="#9b9b9b"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/cross"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginLeft="90dp"
+                android:background="#ffffff"
+                android:text="-"
+                android:layout_toRightOf="@+id/five"
+                android:onClick="none"
+                android:layout_below="@id/nine"
+                android:textColor="#9b9b9b"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/butto"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="35dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/zero"
+                android:background="@drawable/blue_button"
+                android:text="Done"
+                android:onClick="done"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="19sp"
+                android:layout_marginBottom="40dp"/>
+        </RelativeLayout>
+    </ScrollView>
+</android.support.v7.widget.CardView>

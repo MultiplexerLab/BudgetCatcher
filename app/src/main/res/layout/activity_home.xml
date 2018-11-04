@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f9fc"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativelayout2">
+
+        <TextView
+            android:id="@+id/blue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="47dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <at.markushi.ui.CircleButton
+            android:id="@+id/menu"
+            android:layout_width="23dp"
+            android:layout_height="21dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_chevron_left_black_24dp"
+            app:cb_color="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/overview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="Home"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/grey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/blue"
+            android:height="60dp"
+            android:background="#232450" />
+
+        <TextView
+            android:id="@+id/texttt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/overview"
+            android:layout_gravity="left"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:gravity="left"
+            android:text="Nov 10, 2017"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <at.markushi.ui.CircleButton
+            android:id="@+id/backleft"
+            android:layout_width="23dp"
+            android:layout_height="21dp"
+            android:layout_below="@id/blue"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/ic_chevron_left_black_24dp"
+            app:cb_color="#232450" />
+
+        <TextView
+            android:id="@+id/d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/overview"
+            android:layout_gravity="end"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="40dp"
+            android:gravity="end"
+            android:text="Nov 17, 2017"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/too"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/overview"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="To"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+
+        <at.markushi.ui.CircleButton
+            android:id="@+id/backright"
+            android:layout_width="23dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/blue"
+            android:layout_marginLeft="330dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/ic_chevron_right_black_24dp"
+            app:cb_color="#232450" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/overView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativelayout2"
+        android:height="60dp"
+        android:text="OVERVIEW"
+        android:onClick="jumpToOverview"
+        android:textStyle="bold"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:gravity="center"
+        android:background="#9fa0cc" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/overView"
+        android:src="@drawable/cap"/>
+
+</RelativeLayout>
